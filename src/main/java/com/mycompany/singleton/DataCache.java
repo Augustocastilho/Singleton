@@ -40,16 +40,5 @@ public class DataCache {
         cache.clear();
     }
     
-    public static void main(String[] args) {
-        DataCache cache1 = DataCache.getInstance();
-        cache1.addToCache("key1", "value1");
-
-        DataCache cache2 = DataCache.getInstance();
-
-        System.out.println("Valor em cache2: " + cache2.getFromCache("key1"));
-
-        cache1.clearCache();
-
-        System.out.println("Valor em cache2 após limpeza do cache1: " + cache2.getFromCache("key1"));
-    }
+    public static void main(String[] args) { }
 }
